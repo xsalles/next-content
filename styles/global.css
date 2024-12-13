@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --neutral-strong-gray : #4D4D4D;
+  --neutral-normal-gray : #717171;
+  --neutral-light-gray : #89939E;
+  --neutral-blue-gray : #ABBED1;
+  --neutral-silvar : #F5F7FA;
+  --neutral-white : #FFFFFF;
+  
+  --primary: #4CAF4F;
+  --secondary: #263238;
+  --info: #2194f3;
+
+  --shade-1: #43A046;
+  --shade-2: #388E3B;
+  --shade-3: #237D31;
+  --shade-4: #1B5E1F;
+  --shade-5: #103E13;
+
+  --tint-1: #66BB69;
+  --tint-2: #81C784;
+  --tint-3: #A5D6A7;
+  --tint-4: #C8E6C9;
+  --tint-5: #E8F5E9;
+
+  --warning: #FBC02D;
+  --error: #E53835;
+  --success: #2E7D31;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;}

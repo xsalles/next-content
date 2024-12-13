@@ -1,0 +1,333 @@
+@import url(./global.css);
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.header img {
+  width: 154px;
+  height: 24px;
+}
+
+.header nav {
+  display: flex;
+  gap: 50px;
+  margin-left: 166px;
+}
+
+.header nav a {
+  font-size: 16px;
+  color: var(--secondary);
+}
+
+.buttonsHeader {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-left: 124px;
+  width: 182px;
+  height: 40px;
+}
+
+.buttonsHeader a {
+  width: 77px;
+  height: 40px;
+  color: var(--primary);
+  padding: 10px 20px;
+}
+
+.buttonsHeader button {
+  width: 91px;
+  height: 40px;
+  color: var(--neutral-white);
+  background-color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+}
+
+.home {
+  display: flex;
+  gap: 104px;
+  margin-top: 160px;
+}
+
+.experienceText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 657px;
+  height: 276px;
+}
+
+.experienceText h2 {
+  font-size: 64px;
+  color: var(--neutral-strong-gray);
+}
+
+.experienceText h2 span {
+  font-size: 64px;
+  color: var(--primary);
+}
+
+.experienceText p {
+  font-size: 16px;
+  color: var(--neutral-normal-gray);
+  margin-top: 16px;
+}
+
+.experienceText button {
+  width: 128px;
+  height: 52px;
+  margin-top: 32px;
+  padding: 14px 32px;
+  background-color: var(--primary);
+  color: var(--neutral-white);
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+  height: 190px;
+}
+
+.clients h4 {
+  color: var(--neutral-strong-gray);
+  font-size: 36px;
+}
+
+.clients p {
+  color: var(--neutral-normal-gray);
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.clients .clientsLogo {
+  width: 1152px;
+  height: 98px;
+  display: flex;
+  gap: 136px;
+  margin-top: 16px;
+}
+
+.clientsLogo img {
+  width: 48px;
+  height: 48px;
+}
+
+.servicesOverview {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.servicesOverview h3 {
+  font-size: 36px;
+  color: var(--neutral-strong-gray);
+  width: 542px;
+  height: 88px;
+}
+
+.servicesOverview p {
+  font-size: 16px;
+  color: var(--neutral-normal-gray);
+  height: 24px;
+  margin-top: 8px;
+}
+
+.community {
+  display: flex;
+  margin-top: 16px;
+  gap: 128px;
+}
+
+.community .card {
+  display: flex;
+  flex-direction: column;
+  width: 299px;
+  height: 260px;
+  align-items: center;
+  text-align: center;
+  padding: 24px 32px;
+}
+
+.community .card img {
+  width: 48px;
+  height: 48px;
+}
+
+.community .card h5 {
+  font-size: 28px;
+  margin-top: 24px;
+  line-height: 36px;
+  width: 267px;
+  height: 72px;
+  color: var(--neutral-strong-gray);
+}
+
+.community .card p {
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 20px;
+  color: var(--neutral-normal-gray);
+}
+
+.community .card .textSmaller {
+  font-size: 28px;
+  margin-top: 24px;
+  line-height: 36px;
+  width: 231px;
+  height: 72px;
+  color: var(--neutral-strong-gray);
+}
+
+.story {
+  display: flex;
+  margin-top: 42px;
+  height: 433px;
+}
+
+.story img {
+  width: 442px;
+  height: 433px;
+}
+
+.story .textStory {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 661px;
+  height: 268px;
+  margin-top: 82px;
+}
+
+.story .textStory h4 {
+    font-size: 36px;
+    width: 601px;
+    height: 88px;
+    line-height: 44px;
+    font-weight: 600;
+    color: var(--neutral-strong-gray);
+}
+
+.story .textStory p {
+    font-size: 14px;
+    line-height: 20px;
+    width: 601px;
+    height: 80px;
+    color: var(--neutral-strong-gray);
+    margin-top: 16px;
+}
+
+.story .textStory button {
+    width: 151px;
+    background-color: var(--primary);
+    border-radius: 4px;
+    border: none;
+    color: var(--neutral-white);
+    padding: 14px 32px;
+    margin-top: 32px;
+}
+
+.helpedData {
+    display: flex;
+    margin-top: 48px;
+    padding: 64px 0;
+    background-color: var(--silver);
+    gap: 72px;
+}
+
+.textHelp {
+    width: 540px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textHelp h4 {
+    font-size: 36px;
+    line-height: 44px;
+    width: 408px;
+    height: 88px;
+    color: var(--neutral-strong-gray);
+}
+
+.textHelp pre {
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--primary);
+}
+
+.textHelp p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--neutral-normal-gray)
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 540px;
+    height: 160px;
+}
+
+.dataContainer .dataHigher {
+    display: flex;
+    gap: 30px;
+    width: 540px;
+    height: 60px;
+}
+
+.dataBellow {
+    display: flex;
+    gap: 30px;
+    width: 540px;
+    height: 60px;
+}
+
+.dataCard {
+   display: flex;
+   gap: 16px;
+   width: 255px;
+   height: 60px;
+} 
+
+.dataCard img{
+   width: 48px;
+   height: 48px;
+}
+
+.dataText h5 {
+    color: var(--neutral-strong-gray);
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.dataText p {
+    color: var(--neutral-normal-gray);
+    font-size: 16px;
+    line-height: 24px;
+}
+
