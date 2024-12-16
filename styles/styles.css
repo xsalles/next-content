@@ -1,16 +1,17 @@
 @import url(./global.css);
 
 main {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .header {
-  width: 100%;
+  width: 100dvw;
   height: 84px;
+  min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,6 +139,46 @@ main {
   height: 48px;
 }
 
+@media (min-width: 415px) and (max-width: 1024px) {
+  .header {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .buttonsHeader {
+    margin-left: 0px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 420px;
+    padding: 72px 48px;
+  }
+
+  .home img {
+    display: none;
+  }
+
+  .experienceText {
+    width: auto;
+    height: auto;
+  }
+
+  .clients {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
 .servicesOverview {
   display: flex;
   flex-direction: column;
@@ -593,8 +634,8 @@ main {
   gap: 16px;
 }
 
-.companyInformations .socialMedia  a{
-  background-color: #3C474C;
+.companyInformations .socialMedia a {
+  background-color: #3c474c;
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -610,7 +651,7 @@ main {
   height: 200px;
 }
 
-.companyDoubts h5{
+.companyDoubts h5 {
   color: var(--neutral-white);
   font-size: 20px;
   line-height: 28px;
@@ -622,12 +663,11 @@ main {
   flex-direction: column;
   font-size: 14px;
   line-height: 20px;
-  margin-top: 24px;  
+  margin-top: 24px;
   gap: 12px;
 }
 
-.containerLinks a{
-  
+.containerLinks a {
   font-size: 14px;
   line-height: 20px;
   color: var(--neutral-white);
@@ -641,7 +681,7 @@ main {
   margin-left: 30px;
 }
 
-.supportDoubts h5{
+.supportDoubts h5 {
   color: var(--neutral-white);
   font-size: 20px;
   line-height: 28px;
@@ -655,23 +695,23 @@ main {
   position: relative;
 }
 
-.newsletter label{
+.newsletter label {
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
   color: var(--neutral-white);
 }
 
-.newsletter input{
+.newsletter input {
   width: 255px;
   height: 40px;
-  background-color: #3C474C;
+  background-color: #3c474c;
   border: none;
   border-radius: 12px;
   margin-top: 24px;
 }
 
-.newsletter input::placeholder{
+.newsletter input::placeholder {
   font-size: 14px;
   color: var(--neutral-normal-gray);
   padding: 9px 12px;
@@ -684,7 +724,3 @@ main {
   top: 64px;
   left: 225px;
 }
-
-
-
-
