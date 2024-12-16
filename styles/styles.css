@@ -268,7 +268,6 @@ main {
   margin-top: 32px;
 }
 
-
 .helpedData {
   display: flex;
   margin-top: 48px;
@@ -326,7 +325,7 @@ main {
   display: flex;
   gap: 30px;
   width: auto;
-    height: 60px;
+  height: 60px;
 }
 
 .dataBellow {
@@ -382,7 +381,7 @@ main {
 }
 
 .howDesign .textHowToDesign h4 {
-     height: 88px;
+  height: 88px;
   font-size: 36px;
   line-height: 44px;
   color: var(--neutral-strong-gray);
@@ -494,7 +493,7 @@ main {
 }
 
 .benefits h4 {
-  height:auto;
+  height: auto;
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
@@ -572,7 +571,8 @@ main {
 .cta {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
+  height: auto;
   align-items: center;
   background-color: var(--neutral-silver);
   margin-top: 94px;
@@ -584,8 +584,8 @@ main {
 
 .cta h3 {
   color: var(--secondary);
-  width: 887px;
-  height: 152px;
+  width: 100%;
+  height: auto;
   font-size: 64px;
   font-weight: 600;
   line-height: 76px;
@@ -603,202 +603,8 @@ main {
   border-radius: 4px;
 }
 
-@media (max-width: 1229px) {
-  .header {
-    display: flex;
-    padding: 0;
-    width: auto;
-    min-width: 100%;
-    justify-content: space-around;
-  }
-  
-  .header nav {
-    display: none;
-  }
-
-  .buttonsHeader {
-    margin-left: 0px;
-  }
-
-  .home {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    min-width: 100%;
-    height: auto;
-    padding: 72px 48px;
-  }
-
-  .home img {
-    display: none;
-  }
-
-  .experienceText {
-    width: auto;
-    height: auto;
-  }
-
-  .clients {
-    width: auto;
-    display: flex;
-    padding: auto;
-    height: auto;
-    min-height: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .clients .clientsLogo {
-    height: auto;
-    width: auto;
-    flex-wrap: wrap;
-    min-width: 100%;
-    display: flex;
-    gap: auto;
-    margin-top: 16px;
-    justify-content: center;
-  }
-
-  .servicesOverview {
-    height: auto;
-    width: 100%;
-  }
-
-  .servicesOverview h3 {
-    height: auto;
-    width: auto;
-  }
-
-  .community {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  .story {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    min-width: 100%;
-    height: auto;
-  }
-
-  .story img{
-    display: none;
-  }
-
-  .story .textStory {
-    width: auto;
-    min-width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-
-  .story .textStory h4 {
-    width: auto;
-    height: auto;
-  }
-
-  .story .textStory p {
-    width: auto;
-    height: auto;
-  }
-
-  .helpedData {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .textHelp {
-    width: auto;
-    height: auto;
-  }
-
-  .textHelp h4 {
-    width: auto;
-    height: auto;
-  }
-
-  .dataContainer {
-    display: flex;
-    gap: 100px;
-    width: auto;
-    height: auto;
-  }
-
-  .dataHigher, .dataBellow {
-    width: auto;
-    height: auto;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-  }
-
-  .howDesign {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 20px;
-  }
-
-  .howDesign img {
-    display: none;
-  }
-
-  .howDesign .textHowToDesign {
-    width: auto;
-    height: auto;
-  }
-
-  .howDesign .textHowToDesign h4 {
-    width: auto;
-    height: auto;
-  }
-
-  .howDesign .textHowToDesign p {
-    width: auto;
-    height: auto;
-  }
-
-  .customers {
-   width: 100%;
-   height: auto;
-   align-items: center;
-   flex-direction: row;
-  }
-  
-  .symbolT {
-    display: none;
-  }
-
-  .textCustomers {
-    width: 100%;
-  }
-
-  .customersLogos{
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-  }
-
-  .benefitsCard img {
-    width: auto;
-    height: auto;
-    padding: 50px;
-  }
-
-  
-}
 .footer {
-  width: auto;
-  min-width: 100%;
+  width: 100%;
   padding: 64px;
   justify-content: center;
   display: flex;
@@ -914,4 +720,224 @@ main {
   position: absolute;
   top: 64px;
   left: 225px;
+}
+
+@media (max-width: 1229px) {
+  .header {
+    display: flex;
+    padding: 0;
+    width: auto;
+    min-width: 100%;
+    justify-content: space-around;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .buttonsHeader {
+    margin-left: 0px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    padding: 72px 48px;
+  }
+
+  .home img {
+    display: none;
+  }
+
+  .experienceText {
+    width: auto;
+    height: auto;
+  }
+
+  .clients {
+    width: auto;
+    display: flex;
+    padding: auto;
+    height: auto;
+    min-height: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .clients .clientsLogo {
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    min-width: 100%;
+    display: flex;
+    gap: auto;
+    margin-top: 16px;
+    justify-content: center;
+  }
+
+  .servicesOverview {
+    height: auto;
+    width: 100%;
+  }
+
+  .servicesOverview h3 {
+    height: auto;
+    width: auto;
+  }
+
+  .community {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+  }
+
+  .story img {
+    display: none;
+  }
+
+  .story .textStory {
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .story .textStory h4 {
+    width: auto;
+    height: auto;
+  }
+
+  .story .textStory p {
+    width: auto;
+    height: auto;
+  }
+
+  .helpedData {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .textHelp {
+    width: auto;
+    height: auto;
+  }
+
+  .textHelp h4 {
+    width: auto;
+    height: auto;
+  }
+
+  .dataContainer {
+    display: flex;
+    gap: 100px;
+    width: auto;
+    height: auto;
+  }
+
+  .dataHigher,
+  .dataBellow {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .howDesign {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .howDesign img {
+    display: none;
+  }
+
+  .howDesign .textHowToDesign {
+    width: auto;
+    height: auto;
+  }
+
+  .howDesign .textHowToDesign h4 {
+    width: auto;
+    height: auto;
+  }
+
+  .howDesign .textHowToDesign p {
+    width: auto;
+    height: auto;
+  }
+
+  .customers {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .symbolT {
+    display: none;
+  }
+
+  .textCustomers {
+    width: 100%;
+  }
+
+  .customersLogos {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .benefitsCard img {
+    width: auto;
+    height: auto;
+    padding: 50px;
+  }
+
+  .cta {
+    width: auto;
+    height: auto;
+    padding: 10px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .companyInformations {
+    margin: 0;
+  }
+
+  .companyDoubts {
+    display: none;
+  }
+
+  .supportDoubts {
+    display: none;
+  }
+
+  .newsletter {
+    display: none;
+  }
 }
