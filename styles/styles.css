@@ -120,8 +120,8 @@ main {
   margin-top: 40px;
   text-align: center;
   align-items: center;
-  width: auto;
-  min-width: 100%;
+  justify-content: center;
+  width: 100%;
   height: auto;
 }
 
@@ -137,7 +137,7 @@ main {
 }
 
 .clients .clientsLogo {
-  width: 1152px;
+  width: auto;
   height: 98px;
   display: flex;
   gap: 136px;
@@ -281,8 +281,8 @@ main {
 }
 
 .textHelp {
-  
-  height: 120px;
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
 }
@@ -290,17 +290,25 @@ main {
 .textHelp h4 {
   font-size: 36px;
   line-height: 44px;
-  height: 88px;
+  width: auto;
+  min-width: 100%;
+  height: auto;
   color: var(--neutral-strong-gray);
 }
 
-.textHelp pre {
+.textHelp span {
   font-size: 36px;
   line-height: 44px;
   color: var(--primary);
+  width: auto;
+  min-width: 100%;
+  height: auto;
 }
 
 .textHelp p {
+  width: auto;
+  min-width: 100%;
+  height: auto;
   font-size: 16px;
   line-height: 24px;
   color: var(--neutral-normal-gray);
@@ -398,6 +406,82 @@ main {
   margin-top: 32px;
 }
 
+.customers {
+  display: flex;
+  gap: 78px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.customers img {
+  width: 326px;
+  height: 326px;
+}
+
+.textCustomers {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+
+.textCustomersDescription {
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--neutral-normal-gray);
+}
+
+.textCustomers h5 {
+  width: 748px;
+  height: 28px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--primary);
+  margin-top: 16px;
+}
+
+.textCustomers .nameAssociation {
+  width: 748px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--neutral-light-gray);
+  margin-top: 8px;
+}
+
+.customersLogos {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 48px;
+  justify-content: space-between;
+  margin-top: 32px;
+  align-items: center;
+}
+
+.customersLogos img {
+  display: flex;
+  width: 48px;
+  height: 48px;
+}
+
+.customersLogos a {
+  width: 223px;
+  height: 44px;
+  padding: 8px;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 @media (max-width: 1229px) {
   .header {
     display: flex;
@@ -406,7 +490,7 @@ main {
     min-width: 100%;
     justify-content: space-around;
   }
-
+  
   .header nav {
     display: none;
   }
@@ -503,16 +587,18 @@ main {
 
   .helpedData {
     width: auto;
-    min-width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
     display: flex;
     flex-direction: column;
     padding: 10px;
   }
 
   .textHelp {
+    width: auto;
+    height: auto;
+  }
+
+  .textHelp h4 {
     width: auto;
     height: auto;
   }
@@ -559,78 +645,29 @@ main {
     width: auto;
     height: auto;
   }
-}
-.customers {
-  display: flex;
-  gap: 78px;
-  width: 100vw;
-  justify-content: center;
-  padding: 32px;
-  margin-top: 48px;
-}
-.customers img {
-  width: 326px;
-  height: 326px;
-}
 
-.textCustomers {
-  display: flex;
-  flex-direction: column;
-}
+  .customers {
+   width: 100%;
+   height: auto;
+   align-items: center;
+   flex-direction: row;
+  }
+  
+  .symbolT {
+    display: none;
+  }
 
-.textCustomers .textCustomersDescription {
-  width: 748px;
-  height: 168px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  color: var(--neutral-normal-gray);
-}
+  .textCustomers {
+    width: 100%;
+  }
 
-.textCustomers h5 {
-  width: 748px;
-  height: 28px;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 28px;
-  color: var(--primary);
-  margin-top: 16px;
-}
+  .customersLogos{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
 
-.textCustomers .nameAssociation {
-  width: 748px;
-  height: 24px;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--neutral-light-gray);
-  margin-top: 8px;
 }
-
-.customersLogos {
-  display: flex;
-  width: 748px;
-  height: 48px;
-  justify-content: space-between;
-  margin-top: 32px;
-  align-items: center;
-}
-
-.customersLogos img {
-  display: flex;
-  width: 48px;
-  height: 48px;
-}
-
-.customersLogos a {
-  width: 223px;
-  height: 44px;
-  padding: 8px;
-  color: var(--primary);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-}
-
 .benefits {
   margin-top: 48px;
   display: flex;
