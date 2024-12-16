@@ -281,6 +281,96 @@ main {
   margin-top: 32px;
 }
 
+
+.helpedData {
+  display: flex;
+  margin-top: 48px;
+  padding: 64px 0;
+  background-color: var(--neutral-silver);
+  gap: 72px;
+  flex-wrap: wrap;
+  width: auto;
+  min-width: 100%;
+  justify-content: center;
+}
+
+.textHelp {
+  width: auto;
+
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textHelp h4 {
+  font-size: 36px;
+  line-height: 44px;
+  width: 408px;
+  height: 88px;
+  color: var(--neutral-strong-gray);
+}
+
+.textHelp pre {
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--primary);
+}
+
+.textHelp p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--neutral-normal-gray);
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: auto;
+  min-width: 100%;
+  height: 160px;
+}
+
+.dataContainer .dataHigher {
+  display: flex;
+  gap: 30px;
+  width: auto;
+  min-width: 100%;
+  height: 60px;
+}
+
+.dataBellow {
+  display: flex;
+  gap: 30px;
+  width: auto;
+  min-width: 100%;
+  height: 60px;
+}
+
+.dataCard {
+  display: flex;
+  gap: 16px;
+  width: 255px;
+  height: 60px;
+}
+
+.dataCard img {
+  width: 48px;
+  height: 48px;
+}
+
+.dataText h5 {
+  color: var(--neutral-strong-gray);
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.dataText p {
+  color: var(--neutral-normal-gray);
+  font-size: 16px;
+  line-height: 24px;
+}
+
 @media (max-width: 1229px) {
   .header {
     display: flex;
@@ -384,93 +474,35 @@ main {
     height: auto;
   }
 
-  
+  .helpedData {
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .textHelp {
+    width: auto;
+    height: auto;
+  }
+
+  .dataContainer {
+    display: flex;
+    gap: 100px;
+    width: auto;
+    height: auto;
+  }
+
+  .dataHigher, .dataBellow {
+    width: auto;
+    height: auto;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+  }
 
 }
-
-.helpedData {
-  display: flex;
-  margin-top: 48px;
-  padding: 64px 0;
-  background-color: var(--neutral-silver);
-  gap: 72px;
-  width: 100vw;
-  justify-content: center;
-}
-
-.textHelp {
-  width: 540px;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-}
-
-.textHelp h4 {
-  font-size: 36px;
-  line-height: 44px;
-  width: 408px;
-  height: 88px;
-  color: var(--neutral-strong-gray);
-}
-
-.textHelp pre {
-  font-size: 36px;
-  line-height: 44px;
-  color: var(--primary);
-}
-
-.textHelp p {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--neutral-normal-gray);
-}
-
-.dataContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  width: 540px;
-  height: 160px;
-}
-
-.dataContainer .dataHigher {
-  display: flex;
-  gap: 30px;
-  width: 540px;
-  height: 60px;
-}
-
-.dataBellow {
-  display: flex;
-  gap: 30px;
-  width: 540px;
-  height: 60px;
-}
-
-.dataCard {
-  display: flex;
-  gap: 16px;
-  width: 255px;
-  height: 60px;
-}
-
-.dataCard img {
-  width: 48px;
-  height: 48px;
-}
-
-.dataText h5 {
-  color: var(--neutral-strong-gray);
-  font-size: 28px;
-  line-height: 36px;
-}
-
-.dataText p {
-  color: var(--neutral-normal-gray);
-  font-size: 16px;
-  line-height: 24px;
-}
-
 .howDesign {
   display: flex;
   gap: 50px;
