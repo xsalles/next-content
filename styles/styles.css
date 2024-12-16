@@ -1,5 +1,19 @@
 @import url(./global.css);
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   height: 100%;
   width: 100%;
@@ -9,13 +23,14 @@ main {
 }
 
 .header {
-  width: 100dvw;
+  width: auto;
   height: 84px;
   min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
+  background-color: var(--neutral-silver);
 }
 
 .header img {
@@ -63,10 +78,17 @@ main {
   display: flex;
   gap: 104px;
   background-color: var(--neutral-silver);
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
+  min-width: 100%;
   padding: 96px;
   justify-content: center;
+  margin-top: 46px;
+}
+
+.home img {
+  width: 391px;
+  height: 407px;
 }
 
 .experienceText {
@@ -111,8 +133,9 @@ main {
   margin-top: 40px;
   text-align: center;
   align-items: center;
-  width: 100vw;
-  height: 190px;
+  width: auto;
+  min-width: 100%;
+  height: auto;
 }
 
 .clients h4 {
@@ -139,46 +162,6 @@ main {
   height: 48px;
 }
 
-@media (min-width: 415px) and (max-width: 1024px) {
-  .header {
-    display: flex;
-    width: 100%;
-    padding: 0;
-    justify-content: space-around;
-  }
-
-  .header nav {
-    display: none;
-  }
-
-  .buttonsHeader {
-    margin-left: 0px;
-  }
-
-  .home {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 420px;
-    padding: 72px 48px;
-  }
-
-  .home img {
-    display: none;
-  }
-
-  .experienceText {
-    width: auto;
-    height: auto;
-  }
-
-  .clients {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
-  }
-}
 .servicesOverview {
   display: flex;
   flex-direction: column;
@@ -203,11 +186,12 @@ main {
 
 .community {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 16px;
   gap: 128px;
 }
 
-.community .card {
+.card {
   display: flex;
   flex-direction: column;
   width: 299px;
@@ -217,12 +201,12 @@ main {
   padding: 24px 32px;
 }
 
-.community .card img {
+.card img {
   width: 48px;
   height: 48px;
 }
 
-.community .card h5 {
+.card h5 {
   font-size: 28px;
   margin-top: 24px;
   line-height: 36px;
@@ -230,15 +214,14 @@ main {
   height: 72px;
   color: var(--neutral-strong-gray);
 }
-
-.community .card p {
+.card p {
   font-size: 14px;
   margin-top: 8px;
   line-height: 20px;
   color: var(--neutral-normal-gray);
 }
 
-.community .card .textSmaller {
+.card .textSmaller {
   font-size: 28px;
   margin-top: 24px;
   line-height: 36px;
@@ -247,6 +230,79 @@ main {
   color: var(--neutral-strong-gray);
 }
 
+@media (max-width: 1229px) {
+  .header {
+    display: flex;
+    padding: 0;
+    width: auto;
+    min-width: 100%;
+    justify-content: space-around;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .buttonsHeader {
+    margin-left: 0px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    padding: 72px 48px;
+  }
+
+  .home img {
+    display: none;
+  }
+
+  .experienceText {
+    width: auto;
+    height: auto;
+  }
+
+  .clients {
+    width: auto;
+    display: flex;
+    padding: auto;
+    height: auto;
+    min-height: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .clients .clientsLogo {
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    min-width: 100%;
+    display: flex;
+    gap: auto;
+    margin-top: 16px;
+    justify-content: center;
+  }
+
+  .servicesOverview {
+    height: auto;
+    width: 100%;
+  }
+
+  .servicesOverview h3 {
+    height: auto;
+    width: auto;
+  }
+
+  .community {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
 .story {
   display: flex;
   margin-top: 42px;
@@ -607,7 +663,8 @@ main {
 }
 
 .footer {
-  width: 100vw;
+  width: auto;
+  min-width: 100%;
   padding: 64px;
   justify-content: center;
   display: flex;
