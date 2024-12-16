@@ -482,6 +482,127 @@ main {
   line-height: 28px;
 }
 
+.benefits {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.benefits h4 {
+  height:auto;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--neutral-strong-gray);
+}
+
+.benefits p {
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--neutral-normal-gray);
+  margin-top: 8px;
+}
+
+.benefitsContainer {
+  display: flex;
+  gap: 24px;
+  height: auto;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 60px;
+}
+
+.benefitsCard {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefitsCard img {
+  width: 100%;
+  height: 286px;
+}
+
+.textBenefit {
+  width: 317px;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--neutral-silver);
+  padding: 16px;
+  top: 200px;
+  border-radius: 8px 8px 0px 0px;
+  align-items: center;
+  box-shadow: 0px 8px 16px rgb(171, 190, 209, 0.4);
+}
+
+.textBenefit p {
+  width: 285px;
+  height: 84px;
+  font-size: 20px;
+  color: var(--neutral-normal-gray);
+  font-weight: 600;
+}
+
+.textBenefit a {
+  width: 99px;
+  height: 28px;
+  color: var(--primary);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  margin-top: 24px;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  background-color: var(--neutral-silver);
+  margin-top: 94px;
+  text-align: center;
+  height: 300px;
+  gap: 32px;
+  padding: 32px 0px;
+}
+
+.cta h3 {
+  color: var(--secondary);
+  width: 887px;
+  height: 152px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 76px;
+}
+
+.cta button {
+  width: 178px;
+  height: 52px;
+  background-color: var(--primary);
+  color: var(--neutral-white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px;
+}
+
 @media (max-width: 1229px) {
   .header {
     display: flex;
@@ -667,120 +788,14 @@ main {
     height: auto;
   }
 
-}
-.benefits {
-  margin-top: 48px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
+  .benefitsCard img {
+    width: auto;
+    height: auto;
+    padding: 50px;
+  }
 
-.benefits h4 {
-  height: 44px;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
-  color: var(--neutral-strong-gray);
+  
 }
-
-.benefits p {
-  width: 628px;
-  height: 72px;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--neutral-normal-gray);
-  margin-top: 8px;
-}
-
-.benefitsContainer {
-  display: flex;
-  gap: 24px;
-  height: 366px;
-}
-
-.benefitsCard {
-  width: 368px;
-  height: 368px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.benefitsCard img {
-  width: 368px;
-  height: 286px;
-}
-
-.textBenefit {
-  width: 317px;
-  height: 176px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: var(--neutral-silver);
-  padding: 16px;
-  top: 200px;
-  border-radius: 8px 8px 0px 0px;
-  align-items: center;
-  box-shadow: 0px 8px 16px rgb(171, 190, 209, 0.4);
-}
-
-.textBenefit p {
-  width: 285px;
-  height: 84px;
-  font-size: 20px;
-  color: var(--neutral-normal-gray);
-  font-weight: 600;
-}
-
-.textBenefit a {
-  width: 99px;
-  height: 28px;
-  color: var(--primary);
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 600;
-  border: none;
-  background-color: transparent;
-  margin-top: 24px;
-}
-
-.cta {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  align-items: center;
-  background-color: var(--neutral-silver);
-  margin-top: 94px;
-  text-align: center;
-  height: 300px;
-  gap: 32px;
-  padding: 32px 0px;
-}
-
-.cta h3 {
-  color: var(--secondary);
-  width: 887px;
-  height: 152px;
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 76px;
-}
-
-.cta button {
-  width: 178px;
-  height: 52px;
-  background-color: var(--primary);
-  color: var(--neutral-white);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  border: none;
-  border-radius: 4px;
-}
-
 .footer {
   width: auto;
   min-width: 100%;
