@@ -230,6 +230,57 @@ main {
   color: var(--neutral-strong-gray);
 }
 
+.story {
+  display: flex;
+  margin-top: 42px;
+  height: 433px;
+  width: auto;
+  min-width: 100%;
+  justify-content: center;
+}
+
+.story img {
+  width: 442px;
+  height: 433px;
+}
+
+.story .textStory {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: auto;
+  height: 268px;
+  margin-top: 82px;
+}
+
+.story .textStory h4 {
+  font-size: 36px;
+  width: 601px;
+  height: 88px;
+  line-height: 44px;
+  font-weight: 600;
+  color: var(--neutral-strong-gray);
+}
+
+.story .textStory p {
+  font-size: 14px;
+  line-height: 20px;
+  width: 601px;
+  height: 80px;
+  color: var(--neutral-strong-gray);
+  margin-top: 16px;
+}
+
+.story .textStory button {
+  width: 151px;
+  background-color: var(--primary);
+  border-radius: 4px;
+  border: none;
+  color: var(--neutral-white);
+  padding: 14px 32px;
+  margin-top: 32px;
+}
+
 @media (max-width: 1229px) {
   .header {
     display: flex;
@@ -302,53 +353,39 @@ main {
     justify-content: center;
     gap: 30px;
   }
-}
-.story {
-  display: flex;
-  margin-top: 42px;
-  height: 433px;
-}
 
-.story img {
-  width: 442px;
-  height: 433px;
-}
+  .story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+  }
 
-.story .textStory {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 661px;
-  height: 268px;
-  margin-top: 82px;
-}
+  .story img{
+    display: none;
+  }
 
-.story .textStory h4 {
-  font-size: 36px;
-  width: 601px;
-  height: 88px;
-  line-height: 44px;
-  font-weight: 600;
-  color: var(--neutral-strong-gray);
-}
+  .story .textStory {
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
 
-.story .textStory p {
-  font-size: 14px;
-  line-height: 20px;
-  width: 601px;
-  height: 80px;
-  color: var(--neutral-strong-gray);
-  margin-top: 16px;
-}
+  .story .textStory h4 {
+    width: auto;
+    height: auto;
+  }
 
-.story .textStory button {
-  width: 151px;
-  background-color: var(--primary);
-  border-radius: 4px;
-  border: none;
-  color: var(--neutral-white);
-  padding: 14px 32px;
-  margin-top: 32px;
+  .story .textStory p {
+    width: auto;
+    height: auto;
+  }
+
+  
+
 }
 
 .helpedData {
