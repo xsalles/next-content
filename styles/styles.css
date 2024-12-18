@@ -1,22 +1,9 @@
 @import url(./global.css);
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 main {
   height: 100%;
-  width: 100%;
+  width: auto;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,8 +120,8 @@ main {
   margin-top: 40px;
   text-align: center;
   align-items: center;
-  width: auto;
-  min-width: 100%;
+  justify-content: center;
+  width: 100%;
   height: auto;
 }
 
@@ -150,7 +137,7 @@ main {
 }
 
 .clients .clientsLogo {
-  width: 1152px;
+  width: auto;
   height: 98px;
   display: flex;
   gap: 136px;
@@ -281,7 +268,6 @@ main {
   margin-top: 32px;
 }
 
-
 .helpedData {
   display: flex;
   margin-top: 48px;
@@ -295,8 +281,12 @@ main {
 }
 
 .textHelp {
+  height: auto;
   width: auto;
+<<<<<<< HEAD
   height: 120px;
+=======
+>>>>>>> a15ed629135782906758209dd129b79685032fb8
   display: flex;
   flex-direction: column;
 }
@@ -310,13 +300,19 @@ main {
   color: var(--neutral-strong-gray);
 }
 
-.textHelp pre {
+.textHelp span {
   font-size: 36px;
   line-height: 44px;
   color: var(--primary);
+  width: auto;
+  min-width: 100%;
+  height: auto;
 }
 
 .textHelp p {
+  width: auto;
+  min-width: 100%;
+  height: auto;
   font-size: 16px;
   line-height: 24px;
   color: var(--neutral-normal-gray);
@@ -327,7 +323,10 @@ main {
   flex-direction: column;
   gap: 40px;
   width: auto;
+<<<<<<< HEAD
  
+=======
+>>>>>>> a15ed629135782906758209dd129b79685032fb8
   height: 160px;
 }
 
@@ -335,7 +334,6 @@ main {
   display: flex;
   gap: 30px;
   width: auto;
-  min-width: 100%;
   height: 60px;
 }
 
@@ -371,6 +369,7 @@ main {
   line-height: 24px;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1229px) {
   .header {
     display: flex;
@@ -510,8 +509,13 @@ main {
   }
 
 }
+=======
+>>>>>>> a15ed629135782906758209dd129b79685032fb8
 .howDesign {
   display: flex;
+  width: auto;
+  min-width: 100%;
+  justify-content: center;
   gap: 50px;
   margin-top: 48px;
 }
@@ -524,12 +528,10 @@ main {
 .howDesign .textHowToDesign {
   display: flex;
   flex-direction: column;
-  width: 661px;
   height: 308px;
 }
 
 .howDesign .textHowToDesign h4 {
-  width: 601px;
   height: 88px;
   font-size: 36px;
   line-height: 44px;
@@ -537,7 +539,6 @@ main {
 }
 
 .howDesign .textHowToDesign p {
-  width: 601px;
   height: 120px;
   font-size: 14px;
   line-height: 20px;
@@ -554,14 +555,17 @@ main {
   padding: 14px 32px;
   margin-top: 32px;
 }
+
 .customers {
   display: flex;
   gap: 78px;
-  width: 100vw;
+  width: 100%;
+  height: auto;
   justify-content: center;
   padding: 32px;
   margin-top: 48px;
 }
+
 .customers img {
   width: 326px;
   height: 326px;
@@ -570,11 +574,13 @@ main {
 .textCustomers {
   display: flex;
   flex-direction: column;
+  width: auto;
+  height: auto;
 }
 
-.textCustomers .textCustomersDescription {
-  width: 748px;
-  height: 168px;
+.textCustomersDescription {
+  width: auto;
+  height: auto;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -602,7 +608,8 @@ main {
 
 .customersLogos {
   display: flex;
-  width: 748px;
+  width: 100%;
+  flex-wrap: wrap;
   height: 48px;
   justify-content: space-between;
   margin-top: 32px;
@@ -631,10 +638,13 @@ main {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
 }
 
 .benefits h4 {
-  height: 44px;
+  height: auto;
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
@@ -642,8 +652,8 @@ main {
 }
 
 .benefits p {
-  width: 628px;
-  height: 72px;
+  width: auto;
+  height: auto;
   font-size: 16px;
   line-height: 24px;
   color: var(--neutral-normal-gray);
@@ -653,12 +663,17 @@ main {
 .benefitsContainer {
   display: flex;
   gap: 24px;
-  height: 366px;
+  height: auto;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 60px;
 }
 
 .benefitsCard {
-  width: 368px;
-  height: 368px;
+  width: auto;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -666,7 +681,7 @@ main {
 }
 
 .benefitsCard img {
-  width: 368px;
+  width: 100%;
   height: 286px;
 }
 
@@ -707,7 +722,8 @@ main {
 .cta {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
+  height: auto;
   align-items: center;
   background-color: var(--neutral-silver);
   margin-top: 94px;
@@ -719,8 +735,8 @@ main {
 
 .cta h3 {
   color: var(--secondary);
-  width: 887px;
-  height: 152px;
+  width: 100%;
+  height: auto;
   font-size: 64px;
   font-weight: 600;
   line-height: 76px;
@@ -739,8 +755,7 @@ main {
 }
 
 .footer {
-  width: auto;
-  min-width: 100%;
+  width: 100%;
   padding: 64px;
   justify-content: center;
   display: flex;
@@ -856,4 +871,224 @@ main {
   position: absolute;
   top: 64px;
   left: 225px;
+}
+
+@media (max-width: 1229px) {
+  .header {
+    display: flex;
+    padding: 0;
+    width: auto;
+    min-width: 100%;
+    justify-content: space-around;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .buttonsHeader {
+    margin-left: 0px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    padding: 72px 48px;
+  }
+
+  .home img {
+    display: none;
+  }
+
+  .experienceText {
+    width: auto;
+    height: auto;
+  }
+
+  .clients {
+    width: auto;
+    display: flex;
+    padding: auto;
+    height: auto;
+    min-height: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .clients .clientsLogo {
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    min-width: 100%;
+    display: flex;
+    gap: auto;
+    margin-top: 16px;
+    justify-content: center;
+  }
+
+  .servicesOverview {
+    height: auto;
+    width: 100%;
+  }
+
+  .servicesOverview h3 {
+    height: auto;
+    width: auto;
+  }
+
+  .community {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+  }
+
+  .story img {
+    display: none;
+  }
+
+  .story .textStory {
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .story .textStory h4 {
+    width: auto;
+    height: auto;
+  }
+
+  .story .textStory p {
+    width: auto;
+    height: auto;
+  }
+
+  .helpedData {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .textHelp {
+    width: auto;
+    height: auto;
+  }
+
+  .textHelp h4 {
+    width: auto;
+    height: auto;
+  }
+
+  .dataContainer {
+    display: flex;
+    gap: 100px;
+    width: auto;
+    height: auto;
+  }
+
+  .dataHigher,
+  .dataBellow {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .howDesign {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .howDesign img {
+    display: none;
+  }
+
+  .howDesign .textHowToDesign {
+    width: auto;
+    height: auto;
+  }
+
+  .howDesign .textHowToDesign h4 {
+    width: auto;
+    height: auto;
+  }
+
+  .howDesign .textHowToDesign p {
+    width: auto;
+    height: auto;
+  }
+
+  .customers {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .symbolT {
+    display: none;
+  }
+
+  .textCustomers {
+    width: 100%;
+  }
+
+  .customersLogos {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .benefitsCard img {
+    width: auto;
+    height: auto;
+    padding: 50px;
+  }
+
+  .cta {
+    width: auto;
+    height: auto;
+    padding: 10px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .companyInformations {
+    margin: 0;
+  }
+
+  .companyDoubts {
+    display: none;
+  }
+
+  .supportDoubts {
+    display: none;
+  }
+
+  .newsletter {
+    display: none;
+  }
 }
